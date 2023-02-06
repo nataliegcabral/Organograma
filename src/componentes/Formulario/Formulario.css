@@ -6,11 +6,12 @@
 }
 
 .formulario form {
+    width: 700px;
     max-width: 80%;
     background-color: #F6F6F6;
     border-radius: 20px;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
-    padding: 10px 70px;
+    padding: 20px 70px;
 }
 
 .formulario h2 {

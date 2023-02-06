@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-padrao);
+}
+
+.colaborador {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.cabecalho {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cabecalho img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.rodape h4 {
+    margin: 20px;
+    color: #6278F7;
+    font-size: 20px;
+}
+
+.rodape p {
+    color: #212121;
+    font-size: 18px;
+}
+

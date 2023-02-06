@@ -1,0 +1,52 @@
+:root {
+    /* Apex Legends */
+    --apex-destaque: #A4373D;
+    --apex-fundo: #f3c8ca;
+    
+    /* Minecraft */
+    --mine-destaque: #687737;
+    --mine-fundo: #e6f0c5;
+    
+    /* League of Legends */
+    --lol-destaque: #5c0585;
+    --lol-fundo: #e2caec;
+    
+    /* Mudae */
+    --mudae-destaque: #26486b;
+    --mudae-fundo: #bacfe7;
+    
+    /* Call of Duty */
+    --cod-destaque: #96D33E;
+    --cod-fundo: #F0F8E2;
+    
+    /* Point Blank */
+    --pb-destaque: #177CD6;
+    --pb-fundo: #dde9f3;
+    
+    /* Gartic */
+    --gartic-destaque: #f0bf3b;
+    --gartic-fundo: #f8ecca;
+     
+}
+
+.time {
+    text-align: center;
+    padding: 32px;
+}
+
+.time h3 {
+    font-size: 30px;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    border-bottom: 3px solid ;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.colaboradores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
