@@ -6,11 +6,11 @@ import './Formulario.css';
 
 const Formulario = (props) => {
 
-
+// arrumar o negocio da imagem
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
-    const [imagem, setImagem] = useState('')
+    const [imagem, setImagem] = useState(null)
     const [time, setTime] = useState('')
 
     const aoSalvar = (evento) => {
@@ -21,6 +21,11 @@ const Formulario = (props) => {
             imagem,
             time
         })
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
+        //isso aq não funciona mais, ver no forum amanha
     }
 
     return (
@@ -29,6 +34,7 @@ const Formulario = (props) => {
                 <h2>Preencha os dados para criar o card do jogador.</h2>
 
             <CampoTexto
+                type="text"
                 obrigatorio={true} 
                 label="Seu nome" 
                 placeholder="Digite seu nome ou nickname"
@@ -37,6 +43,7 @@ const Formulario = (props) => {
              />
 
             <CampoTexto
+                type="text"
                 obrigatorio={true} 
                 label="Seu cargo no time" 
                 placeholder="Ex: main, lane, tipo de atirador, descrição..."
@@ -45,10 +52,11 @@ const Formulario = (props) => {
             />
 
              <CampoTexto 
+                type="file"
                 label="Imagem" 
                 placeholder="Informe o endereço da sua foto"
                 valor={imagem}
-                aoAlterado={valor => setImagem(valor)}
+                aoAlterado={(e) => setImagem(e.target.files[0])}
             />
 
             <ListaSuspensa 

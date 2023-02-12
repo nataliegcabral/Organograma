@@ -46,7 +46,7 @@
 .colaboradores {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 32px;
     flex-wrap: wrap;
 }

@@ -7,12 +7,12 @@ const Rodape = () => {
             <ul>
                 <li>
                     <a href='https://github.com/nataliegcabral' target='_blank' rel="noreferrer">
-                    <i class="devicon-github-original"></i>
+                    <i className="devicon-github-original"></i>
                     </a>
                 </li>
                 <li>
                     <a href='https://www.linkedin.com/in/nataliegc/' target='_blank' rel="noreferrer">
-                    <i class="devicon-linkedin-plain"></i>
+                    <i className="devicon-linkedin-plain"></i>
                     </a>
                 </li>                
                 <li>
