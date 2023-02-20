@@ -1,5 +1,69 @@
 .banner {
-    max-width: 100%;
-    background: #851cbd;
+    background: #78179e url(../../../public/img/fundo.png) center center no-repeat;
     background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: nowrap;
+}
+
+.pessoas {
+    max-width: 40%;
+    width: 400px;
+    margin-top: 30px;
+}
+
+.title {
+    display: block;
+    color: #fff;
+    align-self: center;
+    margin-left: 80px;
+    margin-right: 60px;
+    max-width: 100%;
+    
+}
+
+.title h1 {
+    margin-top: 80px;
+    font-size: 2.8em;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+}
+
+.title p {
+    margin: 8px 0px 30px 0px;
+    font-size: 1.35em;
+    font-family: var(--fonte-titulo);
+}
+
+@media screen and (max-width: 900px) {
+    .banner {
+        gap: 0;
+    }
+
+    .pessoas {
+        
+    }
+
+    .title {
+        width: fit-content;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .title h1 {
+        width: 100%;
+        font-size: 2.2em;
+
+    }
+    
+    .title p {
+        font-size: 1em
+    }
 }
