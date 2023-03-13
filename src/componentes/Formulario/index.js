@@ -10,7 +10,7 @@ const Formulario = (props) => {
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
-    const [imagem, setImagem] = useState(null)
+    const [imagem, setImagem] = useState('')
     const [time, setTime] = useState('')
 
     const aoSalvar = (evento) => {
@@ -52,11 +52,11 @@ const Formulario = (props) => {
             />
 
              <CampoTexto 
-                type="file"
+                type="text"
                 label="Imagem" 
                 placeholder="Informe o endereço da sua foto"
                 valor={imagem}
-                aoAlterado={(e) => setImagem(e.target.files[0])}
+                aoAlterado={valor => setImagem(valor)}
             />
 
             <ListaSuspensa 
